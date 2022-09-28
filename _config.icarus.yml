@@ -164,12 +164,6 @@ widgets:
         type: adsense
         client_id: ''
         slot_id: ''
-    -
-        position: left
-        type: followit
-        description: 
-        action_url: ''
-        verification_code: ''
 plugins:
     animejs: true
     back_to_top: true
