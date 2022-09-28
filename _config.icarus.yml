@@ -8,7 +8,7 @@ head:
         short_name: 
         start_url: 
         theme_color: 
-        background_color: rgba(10, 10, 10, 0.02)
+        background_color: 
         display: standalone
         icons:
             -
@@ -41,8 +41,6 @@ head:
         - ''
     rss: 
 navbar:
-    manifest:
-        background_color: rgba(10, 10, 10, 0.02)
     menu:
         Home: /
         Archives: /archives
@@ -82,8 +80,6 @@ article:
             icon: fab fa-creative-commons-nc
             url: https://creativecommons.org/licenses/by-nc/4.0/
 search:
-    manifest:
-        background_color: rgba(10, 10, 10, 0.02)
     type: insight
     index_pages: true
 comment:
@@ -144,13 +140,13 @@ widgets:
         links:
             Git: https://github.com/ShengyuFang
     -
-        position: left
+        position: right
         type: categories
     -
-        position: left
+        position: right
         type: recent_posts
     -
-        position: left
+        position: right
         type: archives
     -
         position: left
