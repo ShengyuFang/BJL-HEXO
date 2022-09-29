@@ -83,7 +83,9 @@ search:
     type: insight
     index_pages: true
 comment:
-    type: disqus
+    type: valine
+    appId: PVWfNxMcNucm4jHBdJJVBr3K-gzGzoHsz
+    appKey: QzrgJWaAuCwfY4kj2Z9izSVb
     shortname: '评论'
 donates:
     -
