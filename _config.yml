@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://ShengyuFang.github.io/BGL/blog
+url: https://ShengyuFang.github.io/BJL
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -58,6 +58,7 @@ prismjs:
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
+path: /BJL/
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
