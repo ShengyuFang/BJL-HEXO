@@ -1,6 +1,7 @@
 const { Component, Fragment } = require('inferno');
 const Paginator = require('hexo-component-inferno/lib/view/misc/paginator');
 const Article = require('./common/article');
+const Comment = require('./common/comment');
 
 module.exports = class extends Component {
     render() {
@@ -17,6 +18,8 @@ module.exports = class extends Component {
                 urlFor={url_for}
                 prevTitle={__('common.prev')}
                 nextTitle={__('common.next')} /> : null}
+            {/* Comment */}
+            {<Comment config={config} page={page} helper={helper} />}
         </Fragment>;
     }
 };
