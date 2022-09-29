@@ -84,30 +84,15 @@ search:
     index_pages: true
 comment:
     type: disqus
-    shortname: ''
+    shortname: '评论'
 donates:
     -
-        type: afdian
-        url: ''
-    -
         type: alipay
-        qrcode: ''
-    -
-        type: buymeacoffee
-        url: ''
-    -
-        type: patreon
-        url: ''
-    -
-        type: paypal
-        business: ''
-        currency_code: USD
-    -
-        type: wechat
-        qrcode: ''
+        qrcode: 'img/logo.svg'
+        url: 'TODO dummmy'
 share:
     type: sharethis
-    install_url: ''
+    install_url: 'TODO fakeurl'
 sidebar:
     left:
         sticky: false

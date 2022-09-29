@@ -1,5 +1,7 @@
 ---
 title: Raft算法论文解读与实现
+date: 2022-09-30 21:01:00
+categories: 分布式
 ---
 ## 相关资料 ## 
 * 论文原文 https://ramcloud.atlassian.net/wiki/download/attachments/6586375/raft.pdf
