@@ -42,11 +42,11 @@ head:
     rss: 
 navbar:
     menu:
-        Home: /
-        Archives: /archives
-        Categories: /categories
-        Tags: /tags
-        About: /about
+        首页: /
+        归档: /archives
+        分类: /categories
+        标签: /tags
+        关于: /about
     links:
         Download on GitHub:
             icon: fab fa-github
@@ -159,11 +159,6 @@ widgets:
         type: subscribe_email
         description: 
         feedburner_id: ''
-    -
-        position: left
-        type: adsense
-        client_id: ''
-        slot_id: ''
 plugins:
     animejs: true
     back_to_top: true
@@ -196,6 +191,6 @@ plugins:
     twitter_conversion_tracking:
         pixel_id: 
 providers:
-    cdn: loli
-    fontcdn: loli
-    iconcdn: loli
+    cdn: jsdelivr
+    fontcdn: google
+    iconcdn: fontawesome
