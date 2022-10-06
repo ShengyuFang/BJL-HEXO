@@ -180,4 +180,4 @@ plugins:
 providers:
     cdn: jsdelivr
     fontcdn: google
-    iconcdn: fontawesome
+    iconcdn: loli
