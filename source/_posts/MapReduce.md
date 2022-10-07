@@ -13,12 +13,12 @@ MapReduce思想是分治算法，将原问题分解成小的子问题，最后�
 ![WordCount](/img/WordCount.png)
 WordCount任务是统计一个段文字中各单词词。图上展示的是WordCount的MapReduce过程。
 MIT6.824 WordCount的输入是多个文件，简化了Split过程，与实际生产不同。实际生产输入只有一个文件，MapReduce库函数将输入数据分成多份，每份数据大小通常在16 - 64MB之间，Split过程由MapReduce自己完成。
-假设已经Split出10份文件，有3台Map机器，2台reduce机器。某split文件内容为"long long time ago",由map结点2处理该文件。假设采用hash取余的方式处理key，并且hash(long)%2=0, hash(time)%2=0，hash(ago)%2=1。那么将得到文件
+假设已经Split出10份文件，有3台Map机器，2台reduce机器。某split文件内容为"long long time ago",由map结点2处理该文件。假设采用hash取余的方式处理key，并且hash(long)%2=0, hash(time)%2=0，hash(ago)%2=1。那么将得到临时文件
 ```
 M-2-0 "long long time"
 M-2-1 "ago"
 ```
-所有split文件的map都处理完成，也就是Map阶段结束后再由reduce机器r0处理M-0-0,m-1-0,m-2-0得到输出文件MR-out-0, MR-out-0包含所有hash(单词)%2=0的单词的数量, 以此类推。
+所有split文件的map都处理完成，也就是Map阶段结束后再由reduce机器r0处理M-0-0,m-1-0,m-2-0得到输出文件MR-out-0, MR-out-0包含所有hash(单词)%2=0的单词的数量, 其他reduce结点以此类推。
 ### Java的MapReduce框架
 Java内置了单机的MapReduce库，利用多线程计算各子问题，最后返回给主线程，比如ForkJoinPool，CompletableFuture。
 ### MapReduce思考
