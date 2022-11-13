@@ -7,6 +7,10 @@ const Footer = require('./common/footer');
 const Scripts = require('./common/scripts');
 const Search = require('./common/search');
 
+function clickEffect() {
+    
+}
+
 module.exports = class extends Component {
     render() {
         const { site, config, page, helper, body } = this.props;
